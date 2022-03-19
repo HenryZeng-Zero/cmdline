@@ -542,7 +542,7 @@ namespace cmdline {
 
         void parse_check(int argc, char* argv[]) {
             if (!options.count("help"))
-                add("help", '?', "°ïÖúÎÄµµ");
+                add("help", '?', "ï¿½ï¿½ï¿½ï¿½ï¿½Äµï¿½");
             check(argc, parse(argc, argv));
         }
 
@@ -699,7 +699,8 @@ namespace cmdline {
         template <class T>
         class option_with_value : public option_base {
         public:
-            option_with_value(const std::string& name,
+            option_with_value(
+                const std::string& name,
                 char short_name,
                 bool need,
                 const T& def,
